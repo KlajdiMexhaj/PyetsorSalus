@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Your Flask App</h1>
+
+    <h1>Answer These Questions</h1>
+    <form action="/" method="post">
+        <label for="question1">1. What is your favorite color?</label>
+        <input type="text" id="question1" name="answer1" required>
+
+        <label for="question2">2. What is your favorite hobby?</label>
+        <input type="text" id="question2" name="answer2" required>
+
+        <label for="question3">3. What is your dream travel destination?</label>
+        <input type="text" id="question3" name="answer3" required>
+
+        <button type="submit">Submit Answers</button>
+    </form>
+</body>
+</html>
