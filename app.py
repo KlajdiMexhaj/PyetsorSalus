@@ -68,7 +68,7 @@ def format_question_4(view, context, model, name):
 def format_question_5(view, context, model, name):
     choices = {
         'po5': 'Po, mund të përdoret pa problem',
-        'jo5': 'Jo, mund të përdoret vetëm në këtë structure',
+        'jo5': 'Jo, mund të përdoret vetëm në këtë strukturë',
         'nuk5': 'Nuk jam i sigurt'
     }
     return choices.get(model.question_5, 'Unknown')

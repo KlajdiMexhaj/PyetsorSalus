@@ -4,6 +4,7 @@ body {
     padding: 20px;
     background-color: #f9f9f9;
 }
+
 form {
     max-width: 500px;
     margin: auto;
@@ -12,17 +13,26 @@ form {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 label {
     display: block;
     margin: 15px 0 5px;
     font-weight: bold;
 }
-input[type="text"] {
+
+input[type="text"], textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    box-sizing: border-box;  /* Ensure padding is included in the width */
 }
+
+textarea {
+    height: 150px;  /* Adjust height to make the textarea larger */
+    resize: vertical;  /* Allow vertical resizing */
+}
+
 button {
     display: block;
     margin: 20px auto 0;
@@ -33,6 +43,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #0056b3;
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>Shërbimet e Kartës “InSalus”</h1>
+<h1>Pyetesor për kontrollin e njohurive, mbi shërbimin e kartës "InSalus"</h1>
 <form method="POST">
     <div>
         <label for="question_1">1. Cilat janë shërbimet e përgjithshme që mbulon karta “InSalus” për pacientët?</label>
@@ -24,10 +24,24 @@
         <label for="question_3">3. Ekziston mundësia e aplikimit të uljes për kartën tek pacientët?</label>
         <textarea name="question_3" id="question_3" required></textarea>
     </div>
+    <!-- Text questions -->
+    <div>
+        <label for="question_8">4. Nëse një pacient ka ndonjë problem me kartën, a dini si të veproni?</label>
+        <textarea name="question_8" id="question_8" required></textarea>
+    </div>
 
+    <div>
+        <label for="question_9">5. Cila është periudha e vlefshmërisë e kartës së shëndetit?</label>
+        <textarea name="question_9" id="question_9" required></textarea>
+    </div>
+
+    <div>
+        <label for="question_10">6. A ekziston mundësia e rimbursimit të shërbimeve të caktuara përmes kartës?</label>
+        <textarea name="question_10" id="question_10" required></textarea>
+    </div>
     <!-- Multiple choice questions with radio buttons -->
     <div>
-        <label for="question_4">4. A ka ndodhur ndonjëherë që pacientët të hasin vështirësi në përdorimin e kartës së shëndetit për t'u regjistruar ose për të përfituar shërbime?</label>
+        <label for="question_4">7. A ka ndodhur ndonjëherë që pacientët të hasin vështirësi në përdorimin e kartës së shëndetit për t'u regjistruar ose për të përfituar shërbime?</label>
         <div>
             <label><input type="radio" name="question_4" value="po4" required> Po, shpesh</label><br>
             <label><input type="radio" name="question_4" value="rralle4"> Rrallë</label><br>
@@ -37,17 +51,17 @@
 
     <!-- Question 5 -->
     <div>
-        <label for="question_5">5. A mund të përdoret karta “InSalus” për të aksesuar shërbime jashtë strukturës, në spitale të tjera ose qendra shëndetësore të ndryshme?</label>
+        <label for="question_5">8. A mund të përdoret karta “InSalus” për të aksesuar shërbime jashtë strukturës, në spitale të tjera ose qendra shëndetësore të ndryshme?</label>
         <div>
             <label><input type="radio" name="question_5" value="po5" required> Po, mund të përdoret pa problem</label><br>
-            <label><input type="radio" name="question_5" value="jo5"> Jo, mund të përdoret vetëm në këtë structure</label><br>
+            <label><input type="radio" name="question_5" value="jo5"> Jo, mund të përdoret vetëm në këtë strukturë</label><br>
             <label><input type="radio" name="question_5" value="nuk5"> Nuk jam i sigurt</label>
         </div>
     </div>
 
     <!-- Question 6 -->
     <div>
-        <label for="question_6">6. A ka pasur ndonjëherë pacientë që nuk kanë mundur të përfitojnë shërbime për shkak të statusit të pasaktë të kartës?</label>
+        <label for="question_6">9. A ka pasur ndonjëherë pacientë që nuk kanë mundur të përfitojnë shërbime për shkak të statusit të pasaktë të kartës?</label>
         <div>
             <label><input type="radio" name="question_6" value="po6" required> Po, ka ndodhur shpesh</label><br>
             <label><input type="radio" name="question_6" value="poka6"> Po, ka ndodhur ndonjëherë</label><br>
@@ -57,7 +71,7 @@
 
     <!-- Question 7 -->
     <div>
-        <label for="question_7">7. A e konsideroni të mjaftueshëm informacionin që pacientët marrin gjatë procesit të aplikimit për kartën e shëndetit?</label>
+        <label for="question_7">10. A e konsideroni të mjaftueshëm informacionin që pacientët marrin gjatë procesit të aplikimit për kartën e shëndetit?</label>
         <div>
             <label><input type="radio" name="question_7" value="po7" required> Po, janë të informuar plotësisht</label><br>
             <label><input type="radio" name="question_7" value="jo7"> Jo, duhet më shumë informacion</label><br>
@@ -65,27 +79,13 @@
         </div>
     </div>
 
-    <!-- Text questions -->
-    <div>
-        <label for="question_8">8. Nëse një pacient ka ndonjë problem me kartën, a dini si të veproni?</label>
-        <textarea name="question_8" id="question_8" required></textarea>
-    </div>
 
-    <div>
-        <label for="question_9">9. Cila është periudha e vlefshmërisë e kartës së shëndetit?</label>
-        <textarea name="question_9" id="question_9" required></textarea>
-    </div>
-
-    <div>
-        <label for="question_10">10. A ekziston mundësia e rimbursimit të shërbimeve të caktuara përmes kartës?</label>
-        <textarea name="question_10" id="question_10" required></textarea>
-    </div>
 
     <div>
         <label for="question_11">11. A mendoni se duhet të përmirësohet ndonjë aspekt i shërbimit të kartës?</label>
         <textarea name="question_11" id="question_11" required></textarea>
     </div>
-
+    <h2>Faleminderit për kohën dhe përpjekjen tuaj në plotësimin e këtij pyetësori!</h2>
     <button type="submit">Dërgo përgjigjet</button>
 </form>
 
